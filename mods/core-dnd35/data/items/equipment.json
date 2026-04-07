@@ -1,0 +1,35 @@
+{
+  "format": "gmf-dnd35-equipment",
+  "version": 1,
+  "items": [
+    {
+      "id": "dnd35.item.longsword",
+      "name": "Longsword",
+      "category": "weapon",
+      "weapon_group": "longswords",
+      "cost_gp": 15,
+      "weight_lb": 4,
+      "damage_medium": "1d8",
+      "critical": "19-20/x2",
+      "damage_type": "slashing"
+    },
+    {
+      "id": "dnd35.item.chainmail",
+      "name": "Chainmail",
+      "category": "armor",
+      "cost_gp": 150,
+      "weight_lb": 40,
+      "armor_bonus": 6,
+      "max_dex_bonus": 2,
+      "armor_check_penalty": -5,
+      "arcane_spell_failure": 30
+    },
+    {
+      "id": "dnd35.item.backpack",
+      "name": "Backpack",
+      "category": "gear",
+      "cost_gp": 2,
+      "weight_lb": 2
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# Recommended Mod Layout
+
+# Ruleset mod (implementation-backed)
+mods/<ruleset-id>/
+  manifest.json
+  README.md
+  data/
+    .gitkeep
+  templates/
+    entities.txt
+    items.txt
+    tables.txt
+  locales/
+    EN/
+      common.json
+
+# Expansion mod (data-only)
+mods/<expansion-id>/
+  manifest.json
+  README.md
+  data/
+    .gitkeep
+  templates/
+    entities.txt
+    items.txt
+    tables.txt
+  locales/
+    EN/
+      common.json
+
+# Optional, mod-specific contract files
+mods/<mod-id>/
+  schemas/
+    <schema-name>.schema.json
+
+# Notes
+- `manifest.json` is required for all mods.
+- Ruleset mods must define `runtime.rules_engine` in `manifest.json`.
+- Expansion mods must define `ruleset` and must not define `runtime.rules_engine`.
+- `data/` is per-mod and reserved for mod-owned data assets.

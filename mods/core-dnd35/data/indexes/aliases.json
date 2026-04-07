@@ -1,0 +1,11 @@
+{
+  "format": "gmf-dnd35-aliases",
+  "version": 1,
+  "aliases": {
+    "power attack": "dnd35.feat.power_attack",
+    "magic missile": "dnd35.spell.magic_missile",
+    "fighter": "dnd35.class.fighter",
+    "goblin": "dnd35.monster.goblin",
+    "chainmail": "dnd35.item.chainmail"
+  }
+}

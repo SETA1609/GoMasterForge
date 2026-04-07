@@ -1,0 +1,31 @@
+# GoMasterForge campaign state format
+format = gmf-campaign
+version = 1
+campaign_id = red-moon-rising
+campaign_name = Red Moon Rising
+active_profile = gm-main
+active_mods = core@1.0.0,core-dnd35@1.0.0
+loaded_at = 2026-03-31T00:00:00Z
+
+[initiative]
+round = 3
+turn_index = 1
+order = fighter-human-l1,goblin-warrior-cr1-3
+
+[map]
+id = dungeon-entrance
+width = 40
+height = 18
+grid = square
+
+[[token]]
+entity_id = fighter-human-l1
+x = 6
+y = 7
+owner = player:sebas
+
+[[token]]
+entity_id = goblin-warrior-cr1-3
+x = 11
+y = 7
+owner = gm

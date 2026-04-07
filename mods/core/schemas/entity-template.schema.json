@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gomasterforge.dev/schemas/entity-template.schema.json",
+  "title": "Entity Template",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "type",
+    "stats"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "pc",
+        "npc",
+        "monster"
+      ]
+    },
+    "stats": {
+      "type": "object",
+      "required": [
+        "hp"
+      ],
+      "properties": {
+        "hp": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ac": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "speed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

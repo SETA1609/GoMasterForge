@@ -1,0 +1,51 @@
+{
+  "format": "gmf-ogl-sources",
+  "version": 1,
+  "sources": [
+    {
+      "id": "d20srd-home",
+      "url": "https://www.d20srd.org/index.htm",
+      "description": "Primary 3.5 SRD index portal"
+    },
+    {
+      "id": "d20srd-ogl",
+      "url": "https://www.d20srd.org/ogl.htm",
+      "description": "Open Game License 1.0a text"
+    },
+    {
+      "id": "d20srd-classes",
+      "url": "https://www.d20srd.org/indexes/classes.htm",
+      "description": "Class index"
+    },
+    {
+      "id": "d20srd-feats",
+      "url": "https://www.d20srd.org/indexes/feats.htm",
+      "description": "Feat index"
+    },
+    {
+      "id": "d20srd-skills",
+      "url": "https://www.d20srd.org/indexes/skills.htm",
+      "description": "Skill index"
+    },
+    {
+      "id": "d20srd-spells",
+      "url": "https://www.d20srd.org/indexes/spells.htm",
+      "description": "Spell index"
+    },
+    {
+      "id": "d20srd-monsters",
+      "url": "https://www.d20srd.org/indexes/monsters.htm",
+      "description": "Monster index"
+    },
+    {
+      "id": "d20srd-equipment",
+      "url": "https://www.d20srd.org/indexes/equipment.htm",
+      "description": "Equipment and special materials index"
+    },
+    {
+      "id": "d20srd-magic-items",
+      "url": "https://www.d20srd.org/indexes/magicItems.htm",
+      "description": "Magic item index"
+    }
+  ]
+}

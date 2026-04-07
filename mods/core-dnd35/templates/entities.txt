@@ -1,0 +1,40 @@
+# GoMasterForge custom template format
+format = gmf-dndtxt
+version = 1
+kind = entities
+
+[[entity]]
+id = fighter-human-l1
+name = Human Fighter (Level 1)
+type = pc
+cr = 1
+tags = martial,humanoid,starter
+hp = 12
+ac = 16
+speed = 30
+str = 16
+dex = 12
+con = 14
+int = 10
+wis = 10
+cha = 8
+languages = common
+feats = power-attack,weapon-focus[weapon_ref=dnd35.item.longsword]
+
+[[entity]]
+id = goblin-warrior-cr1-3
+name = Goblin Warrior
+type = monster
+cr = 0.33
+tags = goblinoid,raider
+hp = 6
+ac = 15
+speed = 30
+str = 11
+dex = 15
+con = 12
+int = 10
+wis = 9
+cha = 6
+languages = goblin,common
+feats = weapon-focus[weapon_ref=dnd35.item.longsword]

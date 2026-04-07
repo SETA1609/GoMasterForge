@@ -1,0 +1,26 @@
+{
+  "format": "gmf-dnd35-combat-actions",
+  "version": 1,
+  "actions": [
+    {
+      "id": "standard_attack",
+      "name": "Attack"
+    },
+    {
+      "id": "full_attack",
+      "name": "Full Attack"
+    },
+    {
+      "id": "charge",
+      "name": "Charge"
+    },
+    {
+      "id": "defend_total",
+      "name": "Total Defense"
+    },
+    {
+      "id": "withdraw",
+      "name": "Withdraw"
+    }
+  ]
+}

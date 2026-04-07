@@ -1,0 +1,20 @@
+# GoMasterForge profile format
+format = gmf-profile
+version = 1
+profile_id = gm-main
+display_name = Sebastian GM
+role = gm
+locale = EN
+timezone = UTC
+
+[settings]
+chat_timestamp = true
+chat_color_mode = role
+autosave_debounce = 2s
+autosave_checkpoint = 5m
+default_menu_action = continue_campaign
+
+[network]
+allow_guest = false
+require_secret = true
+active_secret_id = weekly-table

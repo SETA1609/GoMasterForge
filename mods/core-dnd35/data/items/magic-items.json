@@ -1,0 +1,38 @@
+{
+  "format": "gmf-dnd35-magic-items",
+  "version": 1,
+  "items": [
+    {
+      "id": "dnd35.magic_item.potion_cure_light_wounds",
+      "name": "Potion of Cure Light Wounds",
+      "category": "potion",
+      "cost_gp": 50,
+      "caster_level": 1,
+      "effects": [
+        {
+          "effect_id": "core.heal_roll",
+          "params": {
+            "formula": "1d8+1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dnd35.magic_item.wand_magic_missile",
+      "name": "Wand of Magic Missile",
+      "category": "wand",
+      "cost_gp": 750,
+      "caster_level": 1,
+      "charges": 50,
+      "effects": [
+        {
+          "effect_id": "core.damage_roll",
+          "params": {
+            "formula": "1d4+1",
+            "damage_type": "force"
+          }
+        }
+      ]
+    }
+  ]
+}

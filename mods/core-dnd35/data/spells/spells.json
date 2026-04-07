@@ -1,0 +1,77 @@
+{
+  "format": "gmf-dnd35-spells",
+  "version": 1,
+  "spells": [
+    {
+      "id": "dnd35.spell.magic_missile",
+      "name": "Magic Missile",
+      "school": "evocation",
+      "levels": {
+        "wizard": 1,
+        "sorcerer": 1
+      },
+      "range": "medium",
+      "duration": "instant",
+      "saving_throw": "none",
+      "spell_resistance": "yes",
+      "effects": [
+        {
+          "effect_id": "core.damage_roll",
+          "params": {
+            "formula": "1d4+1",
+            "damage_type": "force"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dnd35.spell.cure_light_wounds",
+      "name": "Cure Light Wounds",
+      "school": "conjuration_healing",
+      "levels": {
+        "cleric": 1,
+        "druid": 1,
+        "bard": 1,
+        "paladin": 1,
+        "ranger": 2
+      },
+      "range": "touch",
+      "duration": "instant",
+      "saving_throw": "will_half_harmless",
+      "spell_resistance": "yes_harmless",
+      "effects": [
+        {
+          "effect_id": "core.heal_roll",
+          "params": {
+            "formula": "1d8+1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dnd35.spell.bulls_strength",
+      "name": "Bull's Strength",
+      "school": "transmutation",
+      "levels": {
+        "cleric": 2,
+        "druid": 2,
+        "wizard": 2,
+        "sorcerer": 2
+      },
+      "range": "touch",
+      "duration": "1m_per_level",
+      "saving_throw": "will_negates_harmless",
+      "spell_resistance": "yes_harmless",
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "STR",
+            "bonus_type": "enhancement",
+            "amount": 4
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# GoMasterForge server settings format
+format = gmf-settings
+version = 1
+ssh_host = 0.0.0.0
+ssh_port = 2323
+default_locale = EN
+max_players_soft = 8
+
+[security]
+rate_limit_chat_per_10s = 20
+require_known_host = false
+
+[save_policy]
+debounce = 2s
+checkpoint = 5m
+snapshot_retention = 10

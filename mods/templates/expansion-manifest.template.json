@@ -1,0 +1,40 @@
+{
+  "id": "my-expansion-id",
+  "name": "My Expansion Name",
+  "version": "1.0.0",
+  "type": "expansion",
+  "ruleset": "my-ruleset-id",
+  "description": "Data-only expansion for an existing ruleset: races, entities, items, tables, and lore.",
+  "dependencies": [
+    {
+      "id": "core",
+      "version": ">=1.0.0 <2.0.0"
+    },
+    {
+      "id": "my-ruleset-id",
+      "version": ">=1.0.0 <2.0.0"
+    }
+  ],
+  "entrypoints": {
+    "data": [
+      "data/"
+    ],
+    "templates": [
+      "templates/entities.txt",
+      "templates/items.txt",
+      "templates/tables.txt"
+    ],
+    "locales": [
+      "locales/EN/common.json"
+    ]
+  },
+  "compatibility": {
+    "app": ">=1.0.0",
+    "api": "v1"
+  },
+  "legal": {
+    "license": "MIT",
+    "ogl": false,
+    "notes": "Expansion packs are data-only and must not declare runtime rules implementation."
+  }
+}

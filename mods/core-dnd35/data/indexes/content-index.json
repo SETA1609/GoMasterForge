@@ -1,0 +1,16 @@
+{
+  "format": "gmf-dnd35-index",
+  "version": 1,
+  "ruleset": "core-dnd35",
+  "domains": {
+    "races": "data/races/races.json",
+    "classes": "data/classes/classes.json",
+    "skills": "data/rules/skills.json",
+    "feats": "data/feats/feats.json",
+    "spells": "data/spells/spells.json",
+    "monsters": "data/monsters/monsters.json",
+    "equipment": "data/items/equipment.json",
+    "magic_items": "data/items/magic-items.json",
+    "tables": "data/tables/progression.json"
+  }
+}

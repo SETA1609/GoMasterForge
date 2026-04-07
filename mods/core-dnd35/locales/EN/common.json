@@ -1,0 +1,13 @@
+{
+  "mod": {
+    "core-dnd35": {
+      "name": "D&D 3.5 SRD",
+      "description": "SRD/OGL-safe data pack for D&D 3.5"
+    }
+  },
+  "macros": {
+    "attack": {
+      "description": "Perform an attack roll against target"
+    }
+  }
+}

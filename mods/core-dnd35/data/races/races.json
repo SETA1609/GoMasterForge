@@ -1,0 +1,57 @@
+{
+  "format": "gmf-dnd35-races",
+  "version": 1,
+  "races": [
+    {
+      "id": "dnd35.race.human",
+      "name": "Human",
+      "size": "medium",
+      "speed": 30,
+      "ability_modifiers": [],
+      "traits": [
+        "bonus_feat_level_1",
+        "bonus_skill_points"
+      ]
+    },
+    {
+      "id": "dnd35.race.elf",
+      "name": "Elf",
+      "size": "medium",
+      "speed": 30,
+      "ability_modifiers": [
+        {
+          "ability": "DEX",
+          "value": 2
+        },
+        {
+          "ability": "CON",
+          "value": -2
+        }
+      ],
+      "traits": [
+        "low_light_vision",
+        "immunity_sleep"
+      ]
+    },
+    {
+      "id": "dnd35.race.dwarf",
+      "name": "Dwarf",
+      "size": "medium",
+      "speed": 20,
+      "ability_modifiers": [
+        {
+          "ability": "CON",
+          "value": 2
+        },
+        {
+          "ability": "CHA",
+          "value": -2
+        }
+      ],
+      "traits": [
+        "darkvision_60",
+        "stability"
+      ]
+    }
+  ]
+}

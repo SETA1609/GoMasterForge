@@ -1,0 +1,45 @@
+{
+  "id": "core-dnd35",
+  "name": "D&D 3.5 SRD Core Pack",
+  "version": "1.0.0",
+  "type": "ruleset",
+  "description": "SRD/OGL-safe templates, macros, and table data for D&D 3.5.",
+  "dependencies": [
+    {
+      "id": "core",
+      "version": ">=1.0.0 <2.0.0"
+    }
+  ],
+  "entrypoints": {
+    "data": [
+      "data/indexes/content-index.json",
+      "data/ogl/sources.json",
+      "data/feats/feats.json",
+      "data/spells/spells.json",
+      "data/monsters/monsters.json"
+    ],
+    "templates": [
+      "templates/entities.txt",
+      "templates/items.txt"
+    ],
+    "locales": [
+      "locales/EN/common.json"
+    ]
+  },
+  "compatibility": {
+    "app": ">=1.0.0",
+    "api": "v1"
+  },
+  "runtime": {
+    "rules_engine": "dnd35-v1"
+  },
+  "legal": {
+    "license": "OGL-1.0a",
+    "ogl": true,
+    "srd_only": true,
+    "product_identity_included": false,
+    "notices": [
+      "Includes SRD/Open Game Content only."
+    ]
+  }
+}

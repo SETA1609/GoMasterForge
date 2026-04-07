@@ -1,0 +1,56 @@
+{
+  "format": "gmf-dnd35-skills",
+  "version": 1,
+  "skills": [
+    {
+      "id": "appraise",
+      "ability": "INT",
+      "trained_only": false
+    },
+    {
+      "id": "bluff",
+      "ability": "CHA",
+      "trained_only": false
+    },
+    {
+      "id": "concentration",
+      "ability": "CON",
+      "trained_only": false
+    },
+    {
+      "id": "diplomacy",
+      "ability": "CHA",
+      "trained_only": false
+    },
+    {
+      "id": "hide",
+      "ability": "DEX",
+      "trained_only": false
+    },
+    {
+      "id": "listen",
+      "ability": "WIS",
+      "trained_only": false
+    },
+    {
+      "id": "move_silently",
+      "ability": "DEX",
+      "trained_only": false
+    },
+    {
+      "id": "search",
+      "ability": "INT",
+      "trained_only": false
+    },
+    {
+      "id": "spot",
+      "ability": "WIS",
+      "trained_only": false
+    },
+    {
+      "id": "use_magic_device",
+      "ability": "CHA",
+      "trained_only": true
+    }
+  ]
+}

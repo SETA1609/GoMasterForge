@@ -1,0 +1,37 @@
+{
+  "id": "my-ruleset-id",
+  "name": "My Ruleset Name",
+  "version": "1.0.0",
+  "type": "ruleset",
+  "description": "Core ruleset package with runtime rules implementation and base gameplay data.",
+  "dependencies": [
+    {
+      "id": "core",
+      "version": ">=1.0.0 <2.0.0"
+    }
+  ],
+  "entrypoints": {
+    "data": [
+      "data/"
+    ],
+    "templates": [
+      "templates/entities.txt",
+      "templates/items.txt"
+    ],
+    "locales": [
+      "locales/EN/common.json"
+    ]
+  },
+  "compatibility": {
+    "app": ">=1.0.0",
+    "api": "v1"
+  },
+  "runtime": {
+    "rules_engine": "my-ruleset-engine-v1"
+  },
+  "legal": {
+    "license": "MIT",
+    "ogl": false,
+    "notes": "Set legal metadata according to the actual ruleset content source."
+  }
+}

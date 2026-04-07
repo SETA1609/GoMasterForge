@@ -1,0 +1,75 @@
+{
+  "format": "gmf-dnd35-classes",
+  "version": 1,
+  "classes": [
+    {
+      "id": "dnd35.class.fighter",
+      "name": "Fighter",
+      "hit_die": "d10",
+      "bab_progression": "full",
+      "save_progression": {
+        "fortitude": "good",
+        "reflex": "poor",
+        "will": "poor"
+      },
+      "skill_points_per_level": 2,
+      "class_skills": [
+        "climb",
+        "jump",
+        "swim",
+        "ride"
+      ],
+      "features": [
+        "bonus_feat"
+      ]
+    },
+    {
+      "id": "dnd35.class.rogue",
+      "name": "Rogue",
+      "hit_die": "d6",
+      "bab_progression": "medium",
+      "save_progression": {
+        "fortitude": "poor",
+        "reflex": "good",
+        "will": "poor"
+      },
+      "skill_points_per_level": 8,
+      "class_skills": [
+        "bluff",
+        "disable_device",
+        "hide",
+        "move_silently",
+        "search",
+        "tumble",
+        "use_magic_device"
+      ],
+      "features": [
+        "sneak_attack",
+        "trapfinding",
+        "evasion"
+      ]
+    },
+    {
+      "id": "dnd35.class.wizard",
+      "name": "Wizard",
+      "hit_die": "d4",
+      "bab_progression": "poor",
+      "save_progression": {
+        "fortitude": "poor",
+        "reflex": "poor",
+        "will": "good"
+      },
+      "skill_points_per_level": 2,
+      "class_skills": [
+        "concentration",
+        "knowledge_arcana",
+        "spellcraft"
+      ],
+      "features": [
+        "spellcasting_arcane",
+        "familiar",
+        "scribe_scroll"
+      ]
+    }
+  ]
+}

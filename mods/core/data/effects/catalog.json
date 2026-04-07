@@ -1,0 +1,75 @@
+{
+  "format": "gmf-effects-catalog",
+  "version": 1,
+  "effects": [
+    {
+      "id": "core.apply_bonus",
+      "name": "Apply Bonus",
+      "description": "Applies a typed numeric bonus to a target stat or roll domain, optionally scoped by a selector.",
+      "params": [
+        "target_stat",
+        "bonus_type",
+        "amount",
+        "selector"
+      ]
+    },
+    {
+      "id": "core.apply_condition",
+      "name": "Apply Condition",
+      "description": "Applies a status condition to a target.",
+      "params": [
+        "condition_id"
+      ]
+    },
+    {
+      "id": "core.damage_roll",
+      "name": "Damage Roll",
+      "description": "Deals damage using dice formula and typed damage channels.",
+      "params": [
+        "formula",
+        "damage_type"
+      ]
+    },
+    {
+      "id": "core.heal_roll",
+      "name": "Healing Roll",
+      "description": "Restores hit points using a dice formula.",
+      "params": [
+        "formula"
+      ]
+    },
+    {
+      "id": "core.grant_temp_hp",
+      "name": "Grant Temporary HP",
+      "description": "Grants temporary hit points for a duration.",
+      "params": [
+        "amount"
+      ]
+    },
+    {
+      "id": "core.summon_entity",
+      "name": "Summon Entity",
+      "description": "Summons an entity template into encounter state.",
+      "params": [
+        "entity_template_id"
+      ]
+    },
+    {
+      "id": "core.grant_tag",
+      "name": "Grant Tag",
+      "description": "Grants a capability or rules tag used by runtime logic.",
+      "params": [
+        "tag"
+      ]
+    },
+    {
+      "id": "core.metamagic_modifier",
+      "name": "Metamagic Modifier",
+      "description": "Declares spell slot adjustment and behavior token for metamagic feats.",
+      "params": [
+        "metamagic",
+        "slot_adjustment"
+      ]
+    }
+  ]
+}

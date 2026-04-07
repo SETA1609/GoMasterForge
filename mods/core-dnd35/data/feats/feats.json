@@ -1,0 +1,2818 @@
+{
+  "format": "gmf-dnd35-feats",
+  "version": 3,
+  "source": "https://www.d20srd.org/indexes/feats.htm + https://www.d20srd.org/srd/feats.htm",
+  "count": 110,
+  "feats": [
+    {
+      "id": "dnd35.feat.acrobatic",
+      "name": "Acrobatic",
+      "type": "general",
+      "srd_anchor": "acrobatic",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "jump"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "tumble"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Jump checks and Tumble checks."
+    },
+    {
+      "id": "dnd35.feat.agile",
+      "name": "Agile",
+      "type": "general",
+      "srd_anchor": "agile",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "balance"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "escape_artist"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Balance checks and Escape Artist checks."
+    },
+    {
+      "id": "dnd35.feat.alertness",
+      "name": "Alertness",
+      "type": "general",
+      "srd_anchor": "alertness",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "listen"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "spot"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Listen checks and Spot checks."
+    },
+    {
+      "id": "dnd35.feat.animal_affinity",
+      "name": "Animal Affinity",
+      "type": "general",
+      "srd_anchor": "animalAffinity",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "handle_animal"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "ride"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Handle Animal checks and Ride checks."
+    },
+    {
+      "id": "dnd35.feat.armor_proficiency_heavy",
+      "name": "Armor Proficiency (Heavy)",
+      "type": "general",
+      "srd_anchor": "armorProficiencyHeavy",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.armor_proficiency_light"
+        },
+        {
+          "feat": "dnd35.feat.armor_proficiency_medium"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "armor_proficiency",
+            "selector": {
+              "armor_category": "heavy"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "See Armor Proficiency (light) ."
+    },
+    {
+      "id": "dnd35.feat.armor_proficiency_light",
+      "name": "Armor Proficiency (Light)",
+      "type": "general",
+      "srd_anchor": "armorProficiencyLight",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "armor_proficiency",
+            "selector": {
+              "armor_category": "light"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you wear a type of armor with which you are proficient , the armor check penalty for that armor applies only to Balance , Climb , Escape Artist , Hide , Jump , Move Silently , Sleight of Hand , and Tumble checks."
+    },
+    {
+      "id": "dnd35.feat.armor_proficiency_medium",
+      "name": "Armor Proficiency (Medium)",
+      "type": "general",
+      "srd_anchor": "armorProficiencyMedium",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.armor_proficiency_light"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "armor_proficiency",
+            "selector": {
+              "armor_category": "medium"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "See Armor Proficiency (light) ."
+    },
+    {
+      "id": "dnd35.feat.athletic",
+      "name": "Athletic",
+      "type": "general",
+      "srd_anchor": "athletic",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "climb"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "swim"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Climb checks and Swim checks."
+    },
+    {
+      "id": "dnd35.feat.augment_summoning",
+      "name": "Augment Summoning",
+      "type": "general",
+      "srd_anchor": "augmentSummoning",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.spell_focus",
+          "params": {
+            "school": "conjuration"
+          }
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "summoned_STR",
+            "bonus_type": "enhancement",
+            "amount": 4
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "summoned_CON",
+            "bonus_type": "enhancement",
+            "amount": 4
+          }
+        }
+      ],
+      "srd_benefit_summary": "Each creature you conjure with any summon spell gains a +4 enhancement bonus to Strength and Constitution for the duration of the spell that summoned it."
+    },
+    {
+      "id": "dnd35.feat.blind_fight",
+      "name": "Blind-Fight",
+      "type": "general",
+      "srd_anchor": "blindFight",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "blind_fight"
+          }
+        }
+      ],
+      "srd_benefit_summary": "In melee, every time you miss because of concealment , you can reroll your miss chance percentile roll one time to see if you actually hit. An invisible attacker gets no advantages related to hitting you in melee. That is, you don\u2019t lose your Dexterity bonus to Armor Class, and the attacker doesn\u2019t get the usual +2 bonus for being invisible. The invisible attacker\u2019s bonuses do still apply for rang"
+    },
+    {
+      "id": "dnd35.feat.brew_potion",
+      "name": "Brew Potion",
+      "type": "item_creation",
+      "srd_anchor": "brewPotion",
+      "prerequisites": [
+        {
+          "caster_level": 3
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_brewPotion"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create a potion of any 3rd-level or lower spell that you know and that targets one or more creatures. Brewing a potion takes one day. When you create a potion, you set the caster level, which must be sufficient to cast the spell in question and no higher than your own level. The base price of a potion is its spell level &times; its caster level &times; 50 gp. To brew a potion, you must spe"
+    },
+    {
+      "id": "dnd35.feat.cleave",
+      "name": "Cleave",
+      "type": "general",
+      "srd_anchor": "cleave",
+      "prerequisites": [
+        {
+          "ability": "STR",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.power_attack"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "cleave_attack"
+          }
+        }
+      ],
+      "srd_benefit_summary": "If you deal a creature enough damage to make it drop (typically by dropping it to below 0 hit points or killing it), you get an immediate, extra melee attack against another creature within reach. You cannot take a 5-foot step before making this extra attack. The extra attack is with the same weapon and at the same bonus as the attack that dropped the previous creature. You can use this ability on"
+    },
+    {
+      "id": "dnd35.feat.combat_casting",
+      "name": "Combat Casting",
+      "type": "general",
+      "srd_anchor": "combatCasting",
+      "prerequisites": [
+        {
+          "ability": "spellcasting"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "concentration_defensive",
+            "bonus_type": "feat",
+            "amount": 4
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +4 bonus on Concentration checks made to cast a spell or use a spell-like ability while on the defensive or while you are grappling or pinned ."
+    },
+    {
+      "id": "dnd35.feat.combat_expertise",
+      "name": "Combat Expertise",
+      "type": "general",
+      "srd_anchor": "combatExpertise",
+      "prerequisites": [
+        {
+          "ability": "INT",
+          "min": 13
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "melee_attack",
+            "bonus_type": "combat_expertise_tradeoff",
+            "amount": -1,
+            "selector": {
+              "slot": "all"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "armor_class",
+            "bonus_type": "dodge",
+            "amount": 1,
+            "selector": {
+              "slot": "all"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you use the attack action or the full attack action in melee, you can take a penalty of as much as -5 on your attack roll and add the same number (+5 or less) as a dodge bonus to your Armor Class. This number may not exceed your base attack bonus. The changes to attack rolls and Armor Class last until your next action."
+    },
+    {
+      "id": "dnd35.feat.combat_reflexes",
+      "name": "Combat Reflexes",
+      "type": "general",
+      "srd_anchor": "combatReflexes",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "attacks_of_opportunity_per_round",
+            "bonus_type": "feat",
+            "amount": 1,
+            "selector": {
+              "scales_with": "DEX_mod"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You may make a number of additional attacks of opportunity equal to your Dexterity bonus. With this feat, you may also make attacks of opportunity while flat-footed ."
+    },
+    {
+      "id": "dnd35.feat.craft_magic_arms_and_armor",
+      "name": "Craft Magic Arms And Armor",
+      "type": "item_creation",
+      "srd_anchor": "craftMagicArmsAndArmor",
+      "prerequisites": [
+        {
+          "caster_level": 5
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_craftMagicArmsAndArmor"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create any magic weapon, armor, or shield whose prerequisites you meet. Enhancing a weapon, suit of armor, or shield takes one day for each 1,000 gp in the price of its magical features. To enhance a weapon, suit of armor, or shield, you must spend 1/25 of its features\u2019 total price in XP and use up raw materials costing one-half of this total price. The weapon, armor, or shield to be enhan"
+    },
+    {
+      "id": "dnd35.feat.craft_rod",
+      "name": "Craft Rod",
+      "type": "item_creation",
+      "srd_anchor": "craftRod",
+      "prerequisites": [
+        {
+          "caster_level": 9
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_craftRod"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create any rod whose prerequisites you meet. Crafting a rod takes one day for each 1,000 gp in its base price. To craft a rod, you must spend 1/25 of its base price in XP and use up raw materials costing one-half of its base price. Some rods incur extra costs in material components or XP, as noted in their descriptions. These costs are in addition to those derived from the rod\u2019s base price"
+    },
+    {
+      "id": "dnd35.feat.craft_staff",
+      "name": "Craft Staff",
+      "type": "item_creation",
+      "srd_anchor": "craftStaff",
+      "prerequisites": [
+        {
+          "caster_level": 12
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_craftStaff"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create any staff whose prerequisites you meet. Crafting a staff takes one day for each 1,000 gp in its base price. To craft a staff, you must spend 1/25 of its base price in XP and use up raw materials costing one-half of its base price. A newly created staff has 50 charges. Some staffs incur extra costs in material components or XP, as noted in their descriptions. These costs are in addit"
+    },
+    {
+      "id": "dnd35.feat.craft_wand",
+      "name": "Craft Wand",
+      "type": "item_creation",
+      "srd_anchor": "craftWand",
+      "prerequisites": [
+        {
+          "caster_level": 5
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_craftWand"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create a wand of any 4th-level or lower spell that you know. Crafting a wand takes one day for each 1,000 gp in its base price. The base price of a wand is its caster level &times; the spell level &times; 750 gp. To craft a wand, you must spend 1/25 of this base price in XP and use up raw materials costing one-half of this base price. A newly created wand has 50 charges. Any wand that stor"
+    },
+    {
+      "id": "dnd35.feat.craft_wondrous_item",
+      "name": "Craft Wondrous Item",
+      "type": "item_creation",
+      "srd_anchor": "craftWondrousItem",
+      "prerequisites": [
+        {
+          "caster_level": 3
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_craftWondrousItem"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create any wondrous item whose prerequisites you meet. Enchanting a wondrous item takes one day for each 1,000 gp in its price. To enchant a wondrous item, you must spend 1/25 of the item\u2019s price in XP and use up raw materials costing half of this price. You can also mend a broken wondrous item if it is one that you could make. Doing so costs half the XP, half the raw materials, and half t"
+    },
+    {
+      "id": "dnd35.feat.deceitful",
+      "name": "Deceitful",
+      "type": "general",
+      "srd_anchor": "deceitful",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "disguise"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "forgery"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Disguise checks and Forgery checks."
+    },
+    {
+      "id": "dnd35.feat.deflect_arrows",
+      "name": "Deflect Arrows",
+      "type": "general",
+      "srd_anchor": "deflectArrows",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.improved_unarmed_strike"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "deflect_arrows"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You must have at least one hand free (holding nothing) to use this feat. Once per round when you would normally be hit with a ranged weapon, you may deflect it so that you take no damage from it. You must be aware of the attack and not flat-footed . Attempting to deflect a ranged weapon doesn\u2019t count as an action. Unusually massive ranged weapons and ranged attacks generated by spell effects can\u2019t"
+    },
+    {
+      "id": "dnd35.feat.deft_hands",
+      "name": "Deft Hands",
+      "type": "general",
+      "srd_anchor": "deftHands",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "sleight_of_hand"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "use_rope"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Sleight of Hand checks and Use Rope checks."
+    },
+    {
+      "id": "dnd35.feat.diehard",
+      "name": "Diehard",
+      "type": "general",
+      "srd_anchor": "diehard",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.endurance"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "diehard"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When reduced to between -1 and -9 hit points, you automatically become stable . You don\u2019t have to roll d% to see if you lose 1 hit point each round. When reduced to negative hit points, you may choose to act as if you were disabled , rather than dying . You must make this decision as soon as you are reduced to negative hit points (even if it isn\u2019t your turn). If you do not choose to act as if you "
+    },
+    {
+      "id": "dnd35.feat.diligent",
+      "name": "Diligent",
+      "type": "general",
+      "srd_anchor": "diligent",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "appraise"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "decipher_script"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Appraise checks and Decipher Script checks."
+    },
+    {
+      "id": "dnd35.feat.dodge",
+      "name": "Dodge",
+      "type": "general",
+      "srd_anchor": "dodge",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "armor_class",
+            "bonus_type": "dodge",
+            "amount": 1,
+            "selector": {
+              "condition": "vs_selected_target"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "During your action, you designate an opponent and receive a +1 dodge bonus to Armor Class against attacks from that opponent. You can select a new opponent on any action. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses . Also, dodge bonuses stack with each other, unlike most other types of bonuses."
+    },
+    {
+      "id": "dnd35.feat.empower_spell",
+      "name": "Empower Spell",
+      "type": "metamagic",
+      "srd_anchor": "empowerSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "empowerSpell",
+            "slot_adjustment": 2
+          }
+        }
+      ],
+      "srd_benefit_summary": "All variable, numeric effects of an empowered spell are increased by one-half. Saving throws and opposed rolls are not affected, nor are spells without random variables. An empowered spell uses up a spell slot two levels higher than the spell\u2019s actual level."
+    },
+    {
+      "id": "dnd35.feat.endurance",
+      "name": "Endurance",
+      "type": "general",
+      "srd_anchor": "endurance",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "endurance"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You gain a +4 bonus on the following checks and saves: Swim checks made to resist nonlethal damage , Constitution checks made to continue running, Constitution checks made to avoid nonlethal damage from a forced march, Constitution checks made to hold your breath, Constitution checks made to avoid nonlethal damage from starvation or thirst, Fortitude saves made to avoid nonlethal damage from hot o"
+    },
+    {
+      "id": "dnd35.feat.enlarge_spell",
+      "name": "Enlarge Spell",
+      "type": "metamagic",
+      "srd_anchor": "enlargeSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "enlargeSpell",
+            "slot_adjustment": 1
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can alter a spell with a range of close, medium, or long to increase its range by 100%. An enlarged spell with a range of close now has a range of 50 ft. + 5 ft./level, while medium-range spells have a range of 200 ft. + 20 ft./level and long-range spells have a range of 800 ft. + 80 ft./level. An enlarged spell uses up a spell slot one level higher than the spell\u2019s actual level. Spells whose "
+    },
+    {
+      "id": "dnd35.feat.eschew_materials",
+      "name": "Eschew Materials",
+      "type": "general",
+      "srd_anchor": "eschewMaterials",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "eschew_material_components_upto_1gp"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can cast any spell that has a material component costing 1 gp or less without needing that component. (The casting of the spell still provokes attacks of opportunity as normal.) If the spell requires a material component that costs more than 1 gp, you must have the material component at hand to cast the spell, just as normal."
+    },
+    {
+      "id": "dnd35.feat.exotic_weapon_proficiency",
+      "name": "Exotic Weapon Proficiency",
+      "type": "general",
+      "srd_anchor": "exoticWeaponProficiency",
+      "prerequisites": [
+        {
+          "base_attack_bonus": 1
+        },
+        {
+          "ability": "STR",
+          "min": 13,
+          "condition": "if_weapon_ref in [dnd35.item.bastard_sword,dnd35.item.dwarven_waraxe]"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "weapon_proficiency",
+            "selector": {
+              "from_parameter": "weapon_ref"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "weapon_ref"
+        ],
+        "properties": {
+          "weapon_ref": {
+            "type": "string",
+            "description": "Weapon id or group token, e.g. dnd35.item.longsword or group:longswords"
+          }
+        }
+      },
+      "srd_benefit_summary": "You make attack rolls with the weapon normally."
+    },
+    {
+      "id": "dnd35.feat.extend_spell",
+      "name": "Extend Spell",
+      "type": "metamagic",
+      "srd_anchor": "extendSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "extendSpell",
+            "slot_adjustment": 1
+          }
+        }
+      ],
+      "srd_benefit_summary": "An extended spell lasts twice as long as normal. A spell with a duration of concentration, instantaneous, or permanent is not affected by this feat. An extended spell uses up a spell slot one level higher than the spell\u2019s actual level."
+    },
+    {
+      "id": "dnd35.feat.extra_turning",
+      "name": "Extra Turning",
+      "type": "general",
+      "srd_anchor": "extraTurning",
+      "prerequisites": [
+        {
+          "ability": "turn_or_rebuke_creatures"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "turn_or_rebuke_uses_per_day",
+            "bonus_type": "feat",
+            "amount": 4
+          }
+        }
+      ],
+      "srd_benefit_summary": "Each time you take this feat, you can use your ability to turn or rebuke creatures four more times per day than normal. If you have the ability to turn or rebuke more than one kind of creature each of your turning or rebuking abilities gains four additional uses per day."
+    },
+    {
+      "id": "dnd35.feat.far_shot",
+      "name": "Far Shot",
+      "type": "general",
+      "srd_anchor": "farShot",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.point_blank_shot"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "far_shot"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you use a projectile weapon , such as a bow, its range increment increases by one-half (multiply by 1&frac12;). When you use a thrown weapon , its range increment is doubled."
+    },
+    {
+      "id": "dnd35.feat.forge_ring",
+      "name": "Forge Ring",
+      "type": "item_creation",
+      "srd_anchor": "forgeRing",
+      "prerequisites": [
+        {
+          "caster_level": 12
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_forgeRing"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create any ring whose prerequisites you meet. Crafting a ring takes one day for each 1,000 gp in its base price. To craft a ring, you must spend 1/25 of its base price in XP and use up raw materials costing one-half of its base price. You can also mend a broken ring if it is one that you could make. Doing so costs half the XP, half the raw materials, and half the time it would take to forg"
+    },
+    {
+      "id": "dnd35.feat.great_cleave",
+      "name": "Great Cleave",
+      "type": "general",
+      "srd_anchor": "greatCleave",
+      "prerequisites": [
+        {
+          "ability": "STR",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.power_attack"
+        },
+        {
+          "feat": "dnd35.feat.cleave"
+        },
+        {
+          "base_attack_bonus": 4
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "great_cleave_attack"
+          }
+        }
+      ],
+      "srd_benefit_summary": "This feat works like Cleave , except that there is no limit to the number of times you can use it per round."
+    },
+    {
+      "id": "dnd35.feat.great_fortitude",
+      "name": "Great Fortitude",
+      "type": "general",
+      "srd_anchor": "greatFortitude",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "save_fortitude",
+            "bonus_type": "feat",
+            "amount": 2
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Fortitude saving throws ."
+    },
+    {
+      "id": "dnd35.feat.greater_spell_focus",
+      "name": "Greater Spell Focus",
+      "type": "general",
+      "srd_anchor": "greaterSpellFocus",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.spell_focus",
+          "params": {
+            "school_from_parameter": "school"
+          }
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "spell_save_dc",
+            "bonus_type": "feat",
+            "amount": 1,
+            "selector": {
+              "school_from_parameter": "school"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "school"
+        ],
+        "properties": {
+          "school": {
+            "type": "string",
+            "description": "Magic school token, e.g. evocation, transmutation"
+          }
+        }
+      },
+      "srd_benefit_summary": "Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select. This bonus stacks with the bonus from Spell Focus ."
+    },
+    {
+      "id": "dnd35.feat.greater_spell_penetration",
+      "name": "Greater Spell Penetration",
+      "type": "general",
+      "srd_anchor": "greaterSpellPenetration",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.spell_penetration"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "spell_penetration_check",
+            "bonus_type": "feat",
+            "amount": 2
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature\u2019s spell resistance . This bonus stacks with the one from Spell Penetration ."
+    },
+    {
+      "id": "dnd35.feat.greater_two_weapon_fighting",
+      "name": "Greater Two-Weapon Fighting",
+      "type": "general",
+      "srd_anchor": "greaterTwoWeaponFighting",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 19
+        },
+        {
+          "base_attack_bonus": 11
+        },
+        {
+          "feat": "dnd35.feat.two_weapon_fighting"
+        },
+        {
+          "feat": "dnd35.feat.improved_two_weapon_fighting"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "two_weapon_extra_attack",
+            "selector": {
+              "tier": "greater"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a third attack with your off-hand weapon, albeit at a -10 penalty. See the Two-Weapon Fighting special attack."
+    },
+    {
+      "id": "dnd35.feat.greater_weapon_focus",
+      "name": "Greater Weapon Focus",
+      "type": "general",
+      "srd_anchor": "greaterWeaponFocus",
+      "prerequisites": [
+        {
+          "base_attack_bonus": 8
+        },
+        {
+          "feat": "dnd35.feat.weapon_focus",
+          "params": {
+            "weapon_ref_from_parameter": "weapon_ref"
+          }
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "attack_roll",
+            "bonus_type": "feat",
+            "amount": 1,
+            "selector": {
+              "from_parameter": "weapon_ref"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "weapon_ref"
+        ],
+        "properties": {
+          "weapon_ref": {
+            "type": "string",
+            "description": "Weapon id or group token, e.g. dnd35.item.longsword or group:longswords"
+          }
+        }
+      },
+      "srd_benefit_summary": "You gain a +1 bonus on all attack rolls you make using the selected weapon. This bonus stacks with other bonuses on attack rolls, including the one from Weapon Focus (see below)."
+    },
+    {
+      "id": "dnd35.feat.greater_weapon_specialization",
+      "name": "Greater Weapon Specialization",
+      "type": "general",
+      "srd_anchor": "greaterWeaponSpecialization",
+      "prerequisites": [
+        {
+          "base_attack_bonus": 12
+        },
+        {
+          "feat": "dnd35.feat.weapon_focus",
+          "params": {
+            "weapon_ref_from_parameter": "weapon_ref"
+          }
+        },
+        {
+          "feat": "dnd35.feat.weapon_specialization",
+          "params": {
+            "weapon_ref_from_parameter": "weapon_ref"
+          }
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "weapon_damage",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "from_parameter": "weapon_ref"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "weapon_ref"
+        ],
+        "properties": {
+          "weapon_ref": {
+            "type": "string",
+            "description": "Weapon id or group token, e.g. dnd35.item.longsword or group:longswords"
+          }
+        }
+      },
+      "srd_benefit_summary": "You gain a +2 bonus on all damage rolls you make using the selected weapon. This bonus stacks with other bonuses on damage rolls, including the one from Weapon Specialization (see below)."
+    },
+    {
+      "id": "dnd35.feat.heighten_spell",
+      "name": "Heighten Spell",
+      "type": "metamagic",
+      "srd_anchor": "heightenSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "heightenSpell",
+            "slot_adjustment": 1
+          }
+        }
+      ],
+      "srd_benefit_summary": "A heightened spell has a higher spell level than normal (up to a maximum of 9th level). Unlike other metamagic feats, Heighten Spell actually increases the effective level of the spell that it modifies. All effects dependent on spell level (such as saving throw DCs and ability to penetrate a lesser globe of invulnerability ) are calculated according to the heightened level. The heightened spell is"
+    },
+    {
+      "id": "dnd35.feat.improved_bull_rush",
+      "name": "Improved Bull Rush",
+      "type": "general",
+      "srd_anchor": "improvedBullRush",
+      "prerequisites": [
+        {
+          "ability": "STR",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.power_attack"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_bull_rush"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you perform a bull rush you do not provoke an attack of opportunity from the defender. You also gain a +4 bonus on the opposed Strength check you make to push back the defender."
+    },
+    {
+      "id": "dnd35.feat.improved_counterspell",
+      "name": "Improved Counterspell",
+      "type": "general",
+      "srd_anchor": "improvedCounterspell",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.combat_casting"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_counterspell"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When counterspelling, you may use a spell of the same school that is one or more spell levels higher than the target spell."
+    },
+    {
+      "id": "dnd35.feat.improved_critical",
+      "name": "Improved Critical",
+      "type": "general",
+      "srd_anchor": "improvedCritical",
+      "prerequisites": [
+        {
+          "base_attack_bonus": 8
+        },
+        {
+          "ability": "weapon_proficiency_with_selected_weapon"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_critical",
+            "selector": {
+              "from_parameter": "weapon_ref"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "weapon_ref"
+        ],
+        "properties": {
+          "weapon_ref": {
+            "type": "string",
+            "description": "Weapon id or group token, e.g. dnd35.item.longsword or group:longswords"
+          }
+        }
+      },
+      "srd_benefit_summary": "When using the weapon you selected, your threat range is doubled."
+    },
+    {
+      "id": "dnd35.feat.improved_disarm",
+      "name": "Improved Disarm",
+      "type": "general",
+      "srd_anchor": "improvedDisarm",
+      "prerequisites": [
+        {
+          "ability": "INT",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.combat_expertise"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_disarm"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You do not provoke an attack of opportunity when you attempt to disarm an opponent, nor does the opponent have a chance to disarm you. You also gain a +4 bonus on the opposed attack roll you make to disarm your opponent."
+    },
+    {
+      "id": "dnd35.feat.improved_familiar",
+      "name": "Improved Familiar",
+      "type": "general",
+      "srd_anchor": "improvedFamiliar",
+      "prerequisites": [
+        {
+          "ability": "can_acquire_familiar"
+        },
+        {
+          "alignment": "compatible_with_familiar"
+        },
+        {
+          "ability": "improved_familiar_minimum_level_by_type"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_familiar_options"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When choosing a familiar , the creatures listed below are also available to the spellcaster. The spellcaster may choose a familiar with an alignment up to one step away on each of the alignment axes (lawful through chaotic, good through evil). Improved familiars otherwise use the rules for regular familiars, with two exceptions: If the creature\u2019s type is something other than animal, its type does "
+    },
+    {
+      "id": "dnd35.feat.improved_feint",
+      "name": "Improved Feint",
+      "type": "general",
+      "srd_anchor": "improvedFeint",
+      "prerequisites": [
+        {
+          "ability": "INT",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.combat_expertise"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "feint_as_move_action"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can make a Bluff check to feint in combat as a move action ."
+    },
+    {
+      "id": "dnd35.feat.improved_grapple",
+      "name": "Improved Grapple",
+      "type": "general",
+      "srd_anchor": "improvedGrapple",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.improved_unarmed_strike"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_grapple"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You do not provoke an attack of opportunity when you make a touch attack to start a grapple . You also gain a +4 bonus on all grapple checks , regardless of whether you started the grapple."
+    },
+    {
+      "id": "dnd35.feat.improved_initiative",
+      "name": "Improved Initiative",
+      "type": "general",
+      "srd_anchor": "improvedInitiative",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "initiative",
+            "bonus_type": "feat",
+            "amount": 4
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +4 bonus on initiative checks."
+    },
+    {
+      "id": "dnd35.feat.improved_overrun",
+      "name": "Improved Overrun",
+      "type": "general",
+      "srd_anchor": "improvedOverrun",
+      "prerequisites": [
+        {
+          "ability": "STR",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.power_attack"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_overrun"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you attempt to overrun an opponent, the target may not choose to avoid you. You also gain a +4 bonus on your Strength check to knock down your opponent."
+    },
+    {
+      "id": "dnd35.feat.improved_precise_shot",
+      "name": "Improved Precise Shot",
+      "type": "general",
+      "srd_anchor": "improvedPreciseShot",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 19
+        },
+        {
+          "base_attack_bonus": 11
+        },
+        {
+          "feat": "dnd35.feat.point_blank_shot"
+        },
+        {
+          "feat": "dnd35.feat.precise_shot"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "ignore_non_total_cover_and_concealment"
+          }
+        }
+      ],
+      "srd_benefit_summary": "Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover , and the miss chance granted to targets by anything less than total concealment . Total cover and total concealment provide their normal benefits against your ranged attacks. In addition, when you shoot or throw ranged weapons at a grappling opponent, you automatically strike at the opponent you have chos"
+    },
+    {
+      "id": "dnd35.feat.improved_shield_bash",
+      "name": "Improved Shield Bash",
+      "type": "general",
+      "srd_anchor": "improvedShieldBash",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.shield_proficiency"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "retain_shield_bonus_on_bash"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you perform a shield bash , you may still apply the shield\u2019s shield bonus to your AC."
+    },
+    {
+      "id": "dnd35.feat.improved_sunder",
+      "name": "Improved Sunder",
+      "type": "general",
+      "srd_anchor": "improvedSunder",
+      "prerequisites": [
+        {
+          "ability": "STR",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.power_attack"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_sunder"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you strike at an object held or carried by an opponent (such as a weapon or shield), you do not provoke an attack of opportunity . You also gain a +4 bonus on any attack roll made to attack an object held or carried by another character."
+    },
+    {
+      "id": "dnd35.feat.improved_trip",
+      "name": "Improved Trip",
+      "type": "general",
+      "srd_anchor": "improvedTrip",
+      "prerequisites": [
+        {
+          "ability": "INT",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.combat_expertise"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_trip"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You do not provoke an attack of opportunity when you attempt to trip an opponent while you are unarmed. You also gain a +4 bonus on your Strength check to trip your opponent. If you trip an opponent in melee combat, you immediately get a melee attack against that opponent as if you hadn\u2019t used your attack for the trip attempt."
+    },
+    {
+      "id": "dnd35.feat.improved_turning",
+      "name": "Improved Turning",
+      "type": "general",
+      "srd_anchor": "improvedTurning",
+      "prerequisites": [
+        {
+          "ability": "turn_or_rebuke_creatures"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "effective_turning_level",
+            "bonus_type": "feat",
+            "amount": 1
+          }
+        }
+      ],
+      "srd_benefit_summary": "You turn or rebuke creatures as if you were one level higher than you are in the class that grants you the ability."
+    },
+    {
+      "id": "dnd35.feat.improved_two_weapon_fighting",
+      "name": "Improved Two-Weapon Fighting",
+      "type": "general",
+      "srd_anchor": "improvedTwoWeaponFighting",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 17
+        },
+        {
+          "base_attack_bonus": 6
+        },
+        {
+          "feat": "dnd35.feat.two_weapon_fighting"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "two_weapon_extra_attack",
+            "selector": {
+              "tier": "improved"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a -5 penalty. See the Two-Weapon Fighting special attack."
+    },
+    {
+      "id": "dnd35.feat.improved_unarmed_strike",
+      "name": "Improved Unarmed Strike",
+      "type": "general",
+      "srd_anchor": "improvedUnarmedStrike",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "improved_unarmed_strike"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You are considered to be armed even when unarmed \u2014that is, you do not provoke attacks or opportunity from armed opponents when you attack them while unarmed. However, you still get an attack of opportunity against any opponent who makes an unarmed attack on you. In addition, your unarmed strikes can deal lethal or nonlethal damage , at your option."
+    },
+    {
+      "id": "dnd35.feat.investigator",
+      "name": "Investigator",
+      "type": "general",
+      "srd_anchor": "investigator",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "gather_information"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "search"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Gather Information checks and Search checks."
+    },
+    {
+      "id": "dnd35.feat.iron_will",
+      "name": "Iron Will",
+      "type": "general",
+      "srd_anchor": "ironWill",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "save_will",
+            "bonus_type": "feat",
+            "amount": 2
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Will saving throws . Table: Leadership Leadership Score Cohort Level Number of Followers by Level 1st 2nd 3rd 4th 5th 6th 1 or lower \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 2 1st \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 3 2nd \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 4 3rd \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 5 3rd \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 6 4th \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 7 5th \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 8 5th \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 9 6th \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 10 7th 5 \u2014 \u2014 \u2014 \u2014 \u2014 11 7th 6 \u2014 \u2014 \u2014 \u2014 \u2014 12 8th 8 \u2014 \u2014 \u2014 \u2014 \u2014 13 9th 10 1 \u2014 \u2014 \u2014 \u2014 14 10t"
+    },
+    {
+      "id": "dnd35.feat.leadership",
+      "name": "Leadership",
+      "type": "general",
+      "srd_anchor": "leadership",
+      "prerequisites": [
+        {
+          "character_level": 6
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "leadership"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Reflex saving throws ."
+    },
+    {
+      "id": "dnd35.feat.lightning_reflexes",
+      "name": "Lightning Reflexes",
+      "type": "general",
+      "srd_anchor": "lightningReflexes",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "save_reflex",
+            "bonus_type": "feat",
+            "amount": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "dnd35.feat.magical_aptitude",
+      "name": "Magical Aptitude",
+      "type": "general",
+      "srd_anchor": "magicalAptitude",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "spellcraft"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "use_magic_device"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Spellcraft checks and Use Magic Device checks."
+    },
+    {
+      "id": "dnd35.feat.manyshot",
+      "name": "Manyshot",
+      "type": "general",
+      "srd_anchor": "manyshot",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 17
+        },
+        {
+          "base_attack_bonus": 6
+        },
+        {
+          "feat": "dnd35.feat.point_blank_shot"
+        },
+        {
+          "feat": "dnd35.feat.rapid_shot"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "manyshot"
+          }
+        }
+      ],
+      "srd_benefit_summary": "As a standard action , you may fire two arrows at a single opponent within 30 feet. Both arrows use the same attack roll (with a -4 penalty) to determine success and deal damage normally (but see Special). For every five points of base attack bonus you have above +6, you may add one additional arrow to this attack, to a maximum of four arrows at a base attack bonus of +16. However, each arrow afte"
+    },
+    {
+      "id": "dnd35.feat.martial_weapon_proficiency",
+      "name": "Martial Weapon Proficiency",
+      "type": "general",
+      "srd_anchor": "martialWeaponProficiency",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "weapon_proficiency",
+            "selector": {
+              "weapon_category": "martial"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You make attack rolls with the selected weapon normally."
+    },
+    {
+      "id": "dnd35.feat.maximize_spell",
+      "name": "Maximize Spell",
+      "type": "metamagic",
+      "srd_anchor": "maximizeSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "maximizeSpell",
+            "slot_adjustment": 3
+          }
+        }
+      ],
+      "srd_benefit_summary": "All variable, numeric effects of a spell modified by this feat are maximized. Saving throws and opposed rolls are not affected, nor are spells without random variables. A maximized spell uses up a spell slot three levels higher than the spell\u2019s actual level. An empowered, maximized spell gains the separate benefits of each feat: the maximum result plus one-half the normally rolled result."
+    },
+    {
+      "id": "dnd35.feat.mobility",
+      "name": "Mobility",
+      "type": "general",
+      "srd_anchor": "mobility",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.dodge"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "armor_class",
+            "bonus_type": "dodge",
+            "amount": 4,
+            "selector": {
+              "condition": "vs_attacks_of_opportunity_from_movement"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses."
+    },
+    {
+      "id": "dnd35.feat.mounted_archery",
+      "name": "Mounted Archery",
+      "type": "general",
+      "srd_anchor": "mountedArchery",
+      "prerequisites": [
+        {
+          "skill": "ride",
+          "ranks": 1
+        },
+        {
+          "feat": "dnd35.feat.mounted_combat"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "mounted_archery"
+          }
+        }
+      ],
+      "srd_benefit_summary": "The penalty you take when using a ranged weapon while mounted is halved: -2 instead of -4 if your mount is taking a double move, and -4 instead of -8 if your mount is running."
+    },
+    {
+      "id": "dnd35.feat.mounted_combat",
+      "name": "Mounted Combat",
+      "type": "general",
+      "srd_anchor": "mountedCombat",
+      "prerequisites": [
+        {
+          "skill": "ride",
+          "ranks": 1
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "mounted_combat"
+          }
+        }
+      ],
+      "srd_benefit_summary": "Once per round when your mount is hit in combat, you may attempt a Ride check (as a reaction) to negate the hit. The hit is negated if your Ride check result is greater than the opponent\u2019s attack roll . (Essentially, the Ride check result becomes the mount\u2019s Armor Class if it\u2019s higher than the mount\u2019s regular AC.)"
+    },
+    {
+      "id": "dnd35.feat.natural_spell",
+      "name": "Natural Spell",
+      "type": "general",
+      "srd_anchor": "naturalSpell",
+      "prerequisites": [
+        {
+          "ability": "wild_shape"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "natural_spell"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can complete the verbal and somatic components of spells while in a wild shape. You substitute various noises and gestures for the normal verbal and somatic components of a spell. You can also use any material components or focuses you possess, even if such items are melded within your current form. This feat does not permit the use of magic items while you are in a form that could not ordinar"
+    },
+    {
+      "id": "dnd35.feat.negotiator",
+      "name": "Negotiator",
+      "type": "general",
+      "srd_anchor": "negotiator",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "diplomacy"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "sense_motive"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Diplomacy checks and Sense Motive checks."
+    },
+    {
+      "id": "dnd35.feat.nimble_fingers",
+      "name": "Nimble Fingers",
+      "type": "general",
+      "srd_anchor": "nimbleFingers",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "disable_device"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "open_lock"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Disable Device checks and Open Lock checks."
+    },
+    {
+      "id": "dnd35.feat.persuasive",
+      "name": "Persuasive",
+      "type": "general",
+      "srd_anchor": "persuasive",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "bluff"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "intimidate"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Bluff checks and Intimidate checks."
+    },
+    {
+      "id": "dnd35.feat.point_blank_shot",
+      "name": "Point Blank Shot",
+      "type": "general",
+      "srd_anchor": "pointBlankShot",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "ranged_attack",
+            "bonus_type": "feat",
+            "amount": 1,
+            "selector": {
+              "condition": "within_30ft"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "ranged_damage",
+            "bonus_type": "feat",
+            "amount": 1,
+            "selector": {
+              "condition": "within_30ft"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet."
+    },
+    {
+      "id": "dnd35.feat.power_attack",
+      "name": "Power Attack",
+      "type": "general",
+      "srd_anchor": "powerAttack",
+      "prerequisites": [
+        {
+          "ability": "STR",
+          "min": 13
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "melee_attack",
+            "bonus_type": "power_attack_tradeoff",
+            "amount": -1,
+            "selector": {
+              "slot": "all"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "melee_damage",
+            "bonus_type": "power_attack_tradeoff",
+            "amount": 1,
+            "selector": {
+              "slot": "all"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "On your action, before making attack rolls for a round, you may choose to subtract a number from all melee attack rolls and add the same number to all melee damage rolls. This number may not exceed your base attack bonus. The penalty on attacks and bonus on damage apply until your next turn."
+    },
+    {
+      "id": "dnd35.feat.precise_shot",
+      "name": "Precise Shot",
+      "type": "general",
+      "srd_anchor": "preciseShot",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.point_blank_shot"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "precise_shot"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can shoot or throw ranged weapons at an opponent engaged in melee without taking the standard -4 penalty on your attack roll ."
+    },
+    {
+      "id": "dnd35.feat.quick_draw",
+      "name": "Quick Draw",
+      "type": "general",
+      "srd_anchor": "quickDraw",
+      "prerequisites": [
+        {
+          "base_attack_bonus": 1
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "quick_draw"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can draw a weapon as a free action instead of as a move action . You can draw a hidden weapon (see the Sleight of Hand skill) as a move action. A character who has selected this feat may throw weapons at his full normal rate of attacks (much like a character with a bow)."
+    },
+    {
+      "id": "dnd35.feat.quicken_spell",
+      "name": "Quicken Spell",
+      "type": "metamagic",
+      "srd_anchor": "quickenSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "quickenSpell",
+            "slot_adjustment": 4
+          }
+        }
+      ],
+      "srd_benefit_summary": "Casting a quickened spell is an swift action . You can perform another action, even casting another spell, in the same round as you cast a quickened spell. You may cast only one quickened spell per round. A spell whose casting time is more than 1 full round action cannot be quickened. A quickened spell uses up a spell slot four levels higher than the spell\u2019s actual level. Casting a quickened spell"
+    },
+    {
+      "id": "dnd35.feat.rapid_reload",
+      "name": "Rapid Reload",
+      "type": "general",
+      "srd_anchor": "rapidReload",
+      "prerequisites": [
+        {
+          "ability": "weapon_proficiency_with_selected_crossbow"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "rapid_reload"
+          }
+        }
+      ],
+      "srd_benefit_summary": "The time required for you to reload your chosen type of crossbow is reduced to a free action (for a hand or light crossbow ) or a move action (for a heavy crossbow ). Reloading a crossbow still provokes an attack of opportunity . If you have selected this feat for hand crossbow or light crossbow, you may fire that weapon as many times in a full attack action as you could attack if you were using a"
+    },
+    {
+      "id": "dnd35.feat.rapid_shot",
+      "name": "Rapid Shot",
+      "type": "general",
+      "srd_anchor": "rapidShot",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "feat": "dnd35.feat.point_blank_shot"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "rapid_shot"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can get one extra attack per round with a ranged weapon. The attack is at your highest base attack bonus, but each attack you make in that round (the extra one and the normal ones) takes a -2 penalty. You must use the full attack action to use this feat."
+    },
+    {
+      "id": "dnd35.feat.ride_by_attack",
+      "name": "Ride-By Attack",
+      "type": "general",
+      "srd_anchor": "rideByAttack",
+      "prerequisites": [
+        {
+          "skill": "ride",
+          "ranks": 1
+        },
+        {
+          "feat": "dnd35.feat.mounted_combat"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "ride_by_attack"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you are mounted and use the charge action, you may move and attack as if with a standard charge and then move again (continuing the straight line of the charge). Your total movement for the round can\u2019t exceed double your mounted speed. You and your mount do not provoke an attack of opportunity from the opponent that you attack."
+    },
+    {
+      "id": "dnd35.feat.run",
+      "name": "Run",
+      "type": "general",
+      "srd_anchor": "run",
+      "prerequisites": [
+        {
+          "ability": "CON",
+          "min": 13
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "run"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When running, you move five times your normal speed (if wearing medium, light, or no armor and carrying no more than a medium load) or four times your speed (if wearing heavy armor or carrying a heavy load). If you make a jump after a running start (see the Jump skill description), you gain a +4 bonus on your Jump check. While running, you retain your Dexterity bonus to AC."
+    },
+    {
+      "id": "dnd35.feat.scribe_scroll",
+      "name": "Scribe Scroll",
+      "type": "item_creation",
+      "srd_anchor": "scribeScroll",
+      "prerequisites": [
+        {
+          "caster_level": 1
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "can_scribeScroll"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can create a scroll of any spell that you know. Scribing a scroll takes one day for each 1,000 gp in its base price. The base price of a scroll is its spell level &times; its caster level &times; 25 gp. To scribe a scroll, you must spend 1/25 of this base price in XP and use up raw materials costing one-half of this base price. Any scroll that stores a spell with a costly material component or"
+    },
+    {
+      "id": "dnd35.feat.self_sufficient",
+      "name": "Self-Sufficient",
+      "type": "general",
+      "srd_anchor": "selfSufficient",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "heal"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "survival"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Heal checks and Survival checks."
+    },
+    {
+      "id": "dnd35.feat.shield_proficiency",
+      "name": "Shield Proficiency",
+      "type": "general",
+      "srd_anchor": "shieldProficiency",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "shield_proficiency",
+            "selector": {
+              "shield_category": "standard"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can use a shield and take only the standard penalties."
+    },
+    {
+      "id": "dnd35.feat.shot_on_the_run",
+      "name": "Shot On The Run",
+      "type": "general",
+      "srd_anchor": "shotOnTheRun",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "base_attack_bonus": 4
+        },
+        {
+          "feat": "dnd35.feat.point_blank_shot"
+        },
+        {
+          "feat": "dnd35.feat.dodge"
+        },
+        {
+          "feat": "dnd35.feat.mobility"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "shot_on_the_run"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When using the attack action with a ranged weapon, you can move both before and after the attack, provided that your total distance moved is not greater than your speed."
+    },
+    {
+      "id": "dnd35.feat.silent_spell",
+      "name": "Silent Spell",
+      "type": "metamagic",
+      "srd_anchor": "silentSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "silentSpell",
+            "slot_adjustment": 1
+          }
+        }
+      ],
+      "srd_benefit_summary": "A silent spell can be cast with no verbal components. Spells without verbal components are not affected. A silent spell uses up a spell slot one level higher than the spell\u2019s actual level."
+    },
+    {
+      "id": "dnd35.feat.simple_weapon_proficiency",
+      "name": "Simple Weapon Proficiency",
+      "type": "general",
+      "srd_anchor": "simpleWeaponProficiency",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "weapon_proficiency",
+            "selector": {
+              "weapon_category": "simple"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You make attack rolls with simple weapons normally."
+    },
+    {
+      "id": "dnd35.feat.skill_focus",
+      "name": "Skill Focus",
+      "type": "general",
+      "srd_anchor": "skillFocus",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 3,
+            "selector": {
+              "from_parameter": "skill_id"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "skill_id"
+        ],
+        "properties": {
+          "skill_id": {
+            "type": "string",
+            "description": "Skill id token, e.g. spot, diplomacy, use_magic_device"
+          }
+        }
+      },
+      "srd_benefit_summary": "You get a +3 bonus on all checks involving that skill."
+    },
+    {
+      "id": "dnd35.feat.snatch_arrows",
+      "name": "Snatch Arrows",
+      "type": "general",
+      "srd_anchor": "snatchArrows",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 15
+        },
+        {
+          "feat": "dnd35.feat.deflect_arrows"
+        },
+        {
+          "feat": "dnd35.feat.improved_unarmed_strike"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "snatch_arrows"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When using the Deflect Arrows feat you may catch the weapon instead of just deflecting it. Thrown weapons can immediately be thrown back at the original attacker (even though it isn\u2019t your turn) or kept for later use. You must have at least one hand free (holding nothing) to use this feat."
+    },
+    {
+      "id": "dnd35.feat.spell_focus",
+      "name": "Spell Focus",
+      "type": "general",
+      "srd_anchor": "spellFocus",
+      "prerequisites": [
+        {
+          "ability": "spellcasting"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "spell_save_dc",
+            "bonus_type": "feat",
+            "amount": 1,
+            "selector": {
+              "school_from_parameter": "school"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "school"
+        ],
+        "properties": {
+          "school": {
+            "type": "string",
+            "description": "Magic school token, e.g. evocation, transmutation"
+          }
+        }
+      },
+      "srd_benefit_summary": "Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select."
+    },
+    {
+      "id": "dnd35.feat.spell_mastery",
+      "name": "Spell Mastery",
+      "type": "general",
+      "srd_anchor": "spellMasterySpecial",
+      "prerequisites": [
+        {
+          "class_level": {
+            "class_id": "dnd35.class.wizard",
+            "min": 1
+          }
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "spell_mastery",
+            "selector": {
+              "from_parameter": "spells"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "spells"
+        ],
+        "properties": {
+          "spells": {
+            "type": "array",
+            "description": "Known spell ids selected for mastery",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "srd_benefit_summary": "Each time you take this feat, choose a number of spells equal to your Intelligence modifier that you already know. From that point on, you can prepare these spells without referring to a spellbook."
+    },
+    {
+      "id": "dnd35.feat.spell_penetration",
+      "name": "Spell Penetration",
+      "type": "general",
+      "srd_anchor": "spellPenetration",
+      "prerequisites": [
+        {
+          "ability": "spellcasting"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "spell_penetration_check",
+            "bonus_type": "feat",
+            "amount": 2
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature\u2019s spell resistance ."
+    },
+    {
+      "id": "dnd35.feat.spirited_charge",
+      "name": "Spirited Charge",
+      "type": "general",
+      "srd_anchor": "spiritedCharge",
+      "prerequisites": [
+        {
+          "skill": "ride",
+          "ranks": 1
+        },
+        {
+          "feat": "dnd35.feat.mounted_combat"
+        },
+        {
+          "feat": "dnd35.feat.ride_by_attack"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "spirited_charge"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When mounted and using the charge action, you deal double damage with a melee weapon (or triple damage with a lance )."
+    },
+    {
+      "id": "dnd35.feat.spring_attack",
+      "name": "Spring Attack",
+      "type": "general",
+      "srd_anchor": "springAttack",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "base_attack_bonus": 4
+        },
+        {
+          "feat": "dnd35.feat.dodge"
+        },
+        {
+          "feat": "dnd35.feat.mobility"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "spring_attack"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When using the attack action with a melee weapon, you can move both before and after the attack, provided that your total distance moved is not greater than your speed. Moving in this way does not provoke an attack of opportunity from the defender you attack, though it might provoke attacks of opportunity from other creatures, if appropriate. You can\u2019t use this feat if you are wearing heavy armor."
+    },
+    {
+      "id": "dnd35.feat.stealthy",
+      "name": "Stealthy",
+      "type": "general",
+      "srd_anchor": "stealthy",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "hide"
+            }
+          }
+        },
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "skill_check",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "skill_id": "move_silently"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You get a +2 bonus on all Hide checks and Move Silently checks."
+    },
+    {
+      "id": "dnd35.feat.still_spell",
+      "name": "Still Spell",
+      "type": "metamagic",
+      "srd_anchor": "stillSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "stillSpell",
+            "slot_adjustment": 1
+          }
+        }
+      ],
+      "srd_benefit_summary": "A stilled spell can be cast with no somatic components. Spells without somatic components are not affected. A stilled spell uses up a spell slot one level higher than the spell\u2019s actual level."
+    },
+    {
+      "id": "dnd35.feat.stunning_fist",
+      "name": "Stunning Fist",
+      "type": "general",
+      "srd_anchor": "stunningFist",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "ability": "WIS",
+          "min": 13
+        },
+        {
+          "base_attack_bonus": 8
+        },
+        {
+          "feat": "dnd35.feat.improved_unarmed_strike"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "stunning_fist"
+          }
+        }
+      ],
+      "srd_benefit_summary": "You must declare that you are using this feat before you make your attack roll (thus, a failed attack roll ruins the attempt). Stunning Fist forces a foe damaged by your unarmed attack to make a Fortitude saving throw (DC 10 + &frac12; your character level + your Wis modifier), in addition to dealing damage normally. A defender who fails this saving throw is stunned for 1 round (until just before "
+    },
+    {
+      "id": "dnd35.feat.toughness",
+      "name": "Toughness",
+      "type": "general",
+      "srd_anchor": "toughness",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "hit_points",
+            "bonus_type": "feat",
+            "amount": 3
+          }
+        }
+      ],
+      "srd_benefit_summary": "You gain +3 hit points."
+    },
+    {
+      "id": "dnd35.feat.tower_shield_proficiency",
+      "name": "Tower Shield Proficiency",
+      "type": "general",
+      "srd_anchor": "towerShieldProficiency",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.shield_proficiency"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "shield_proficiency",
+            "selector": {
+              "shield_category": "tower"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can use a tower shield and suffer only the standard penalties."
+    },
+    {
+      "id": "dnd35.feat.track",
+      "name": "Track",
+      "type": "general",
+      "srd_anchor": "track",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.alertness"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "track"
+          }
+        }
+      ],
+      "srd_benefit_summary": "To find tracks or to follow them for 1 mile requires a successful Survival check. You must make another Survival check every time the tracks become difficult to follow. You move at half your normal speed (or at your normal speed with a -5 penalty on the check, or at up to twice your normal speed with a -20 penalty on the check). The DC depends on the surface and the prevailing conditions, as given"
+    },
+    {
+      "id": "dnd35.feat.trample",
+      "name": "Trample",
+      "type": "general",
+      "srd_anchor": "trample",
+      "prerequisites": [
+        {
+          "skill": "ride",
+          "ranks": 1
+        },
+        {
+          "feat": "dnd35.feat.mounted_combat"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "trample"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you attempt to overrun an opponent while mounted, your target may not choose to avoid you. Your mount may make one hoof attack against any target you knock down, gaining the standard +4 bonus on attack rolls against prone targets."
+    },
+    {
+      "id": "dnd35.feat.two_weapon_defense",
+      "name": "Two-Weapon Defense",
+      "type": "general",
+      "srd_anchor": "twoWeaponDefense",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 15
+        },
+        {
+          "feat": "dnd35.feat.two_weapon_fighting"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "armor_class",
+            "bonus_type": "shield",
+            "amount": 1,
+            "selector": {
+              "condition": "fighting_with_two_weapons"
+            }
+          }
+        }
+      ],
+      "srd_benefit_summary": "When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes ), you gain a +1 shield bonus to your AC. See the Two-Weapon Fighting special attack. When you are fighting defensively or using the total defense action, this shield bonus increases to +2."
+    },
+    {
+      "id": "dnd35.feat.two_weapon_fighting",
+      "name": "Two-Weapon Fighting",
+      "type": "general",
+      "srd_anchor": "twoWeaponFighting",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 15
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "two_weapon_fighting"
+          }
+        }
+      ],
+      "srd_benefit_summary": "Your penalties on attack rolls for fighting with two weapons are reduced. The penalty for your primary hand lessens by 2 and the one for your off hand lessens by 6. See the Two-Weapon Fighting special attack."
+    },
+    {
+      "id": "dnd35.feat.weapon_finesse",
+      "name": "Weapon Finesse",
+      "type": "general",
+      "srd_anchor": "weaponFinesse",
+      "prerequisites": [
+        {
+          "base_attack_bonus": 1
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "weapon_finesse"
+          }
+        }
+      ],
+      "srd_benefit_summary": "With a light weapon, rapier , whip , or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls . If you carry a shield, its armor check penalty applies to your attack rolls."
+    },
+    {
+      "id": "dnd35.feat.weapon_focus",
+      "name": "Weapon Focus",
+      "type": "general",
+      "srd_anchor": "weaponFocus",
+      "prerequisites": [
+        {
+          "base_attack_bonus": 1
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "attack_roll",
+            "bonus_type": "feat",
+            "amount": 1,
+            "selector": {
+              "from_parameter": "weapon_ref"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "weapon_ref"
+        ],
+        "properties": {
+          "weapon_ref": {
+            "type": "string",
+            "description": "Weapon id or group token, e.g. dnd35.item.longsword or group:longswords"
+          }
+        }
+      },
+      "srd_benefit_summary": "You gain a +1 bonus on all attack rolls you make using the selected weapon."
+    },
+    {
+      "id": "dnd35.feat.weapon_specialization",
+      "name": "Weapon Specialization",
+      "type": "general",
+      "srd_anchor": "weaponSpecialization",
+      "prerequisites": [
+        {
+          "feat": "dnd35.feat.weapon_focus",
+          "params": {
+            "weapon_ref_from_parameter": "weapon_ref"
+          }
+        },
+        {
+          "class_level": {
+            "class_id": "dnd35.class.fighter",
+            "min": 4
+          }
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.apply_bonus",
+          "params": {
+            "target_stat": "weapon_damage",
+            "bonus_type": "feat",
+            "amount": 2,
+            "selector": {
+              "from_parameter": "weapon_ref"
+            }
+          }
+        }
+      ],
+      "parameter_schema": {
+        "required": [
+          "weapon_ref"
+        ],
+        "properties": {
+          "weapon_ref": {
+            "type": "string",
+            "description": "Weapon id or group token, e.g. dnd35.item.longsword or group:longswords"
+          }
+        }
+      },
+      "srd_benefit_summary": "You gain a +2 bonus on all damage rolls you make using the selected weapon."
+    },
+    {
+      "id": "dnd35.feat.whirlwind_attack",
+      "name": "Whirlwind Attack",
+      "type": "general",
+      "srd_anchor": "whirlwindAttack",
+      "prerequisites": [
+        {
+          "ability": "DEX",
+          "min": 13
+        },
+        {
+          "ability": "INT",
+          "min": 13
+        },
+        {
+          "base_attack_bonus": 4
+        },
+        {
+          "feat": "dnd35.feat.combat_expertise"
+        },
+        {
+          "feat": "dnd35.feat.dodge"
+        },
+        {
+          "feat": "dnd35.feat.mobility"
+        },
+        {
+          "feat": "dnd35.feat.spring_attack"
+        }
+      ],
+      "effects": [
+        {
+          "effect_id": "core.grant_tag",
+          "params": {
+            "tag": "whirlwind_attack"
+          }
+        }
+      ],
+      "srd_benefit_summary": "When you use the full attack action, you can give up your regular attacks and instead make one melee attack at your full base attack bonus against each opponent within reach. When you use the Whirlwind Attack feat, you also forfeit any bonus or extra attacks granted by other feats, spells, or abilities."
+    },
+    {
+      "id": "dnd35.feat.widen_spell",
+      "name": "Widen Spell",
+      "type": "metamagic",
+      "srd_anchor": "widenSpell",
+      "prerequisites": [],
+      "effects": [
+        {
+          "effect_id": "core.metamagic_modifier",
+          "params": {
+            "metamagic": "widenSpell",
+            "slot_adjustment": 3
+          }
+        }
+      ],
+      "srd_benefit_summary": "You can alter a burst, emanation, line, or spread shaped spell to increase its area. Any numeric measurements of the spell\u2019s area increase by 100%.A widened spell uses up a spell slot three levels higher than the spell\u2019s actual level. Spells that do not have an area of one of these four sorts are not affected by this feat. googletag.cmd.push(function() { googletag.display('div-gpt-ad-1462389232009"
+    }
+  ],
+  "model_notes": "Prerequisites are parsed into structured tokens where possible; unresolved tokens remain as raw entries. Raw prerequisite tokens are progressively normalized into feat/ability/level references. Added runtime capability tags for non-numeric feats to avoid empty effect entries. Added prerequisite extraction for both Prerequisite and Prerequisites sections and normalized feat chains."
+}

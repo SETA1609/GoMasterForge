@@ -1,0 +1,26 @@
+# GoMasterForge custom template format
+format = gmf-dndtxt
+version = 1
+kind = items
+
+[[item]]
+id = longsword-mw
+name = Masterwork Longsword
+category = weapon
+subtype = martial-melee
+cost_gp = 315
+weight_lb = 4
+damage_medium = 1d8
+crit = 19-20/x2
+properties = slashing
+
+[[item]]
+id = potion-cure-light-wounds
+name = Potion of Cure Light Wounds
+category = consumable
+subtype = potion
+cost_gp = 50
+weight_lb = 0
+effect_id = core.heal_roll
+effect_formula = 1d8+1
+uses = 1

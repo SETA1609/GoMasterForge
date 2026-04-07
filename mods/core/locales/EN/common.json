@@ -1,0 +1,15 @@
+{
+  "mod": {
+    "core": {
+      "name": "Core Contracts",
+      "description": "Shared base contracts for GoMasterForge mods"
+    }
+  },
+  "settings": {
+    "network": {
+      "title": "Network",
+      "clients": "Connected clients",
+      "secrets": "Connection secrets"
+    }
+  }
+}

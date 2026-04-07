@@ -1,0 +1,28 @@
+{
+  "id": "core",
+  "name": "GoMasterForge Core Contracts",
+  "version": "1.0.0",
+  "type": "core-contracts",
+  "description": "Shared schemas, localization keys, and base taxonomy for dependent mods.",
+  "entrypoints": {
+    "data": [
+      "data/effects/catalog.json"
+    ],
+    "schemas": [
+      "schemas/entity-template.schema.json"
+    ],
+    "locales": [
+      "locales/EN/common.json"
+    ]
+  },
+  "dependencies": [],
+  "compatibility": {
+    "app": ">=1.0.0",
+    "api": "v1"
+  },
+  "legal": {
+    "license": "MIT",
+    "ogl": false,
+    "notes": "Contains generic contracts only; no SRD or Product Identity content."
+  }
+}

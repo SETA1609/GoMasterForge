@@ -1,0 +1,26 @@
+{
+  "format": "gomasterforge-manifests",
+  "version": 1,
+  "profile": {
+    "active": "gm-main",
+    "timezone": "UTC"
+  },
+  "mods": {
+    "enabled": [
+      "core@1.0.0",
+      "core-dnd35@1.0.0"
+    ],
+    "export_profile": "dnd35-weekly"
+  },
+  "settings": {
+    "default_locale": "EN",
+    "pre_campaign": {
+      "default_action": "continue_campaign"
+    },
+    "save_policy": {
+      "debounce": "2s",
+      "checkpoint": "5m",
+      "snapshot_retention": 10
+    }
+  }
+}

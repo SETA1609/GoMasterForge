@@ -1,0 +1,50 @@
+{
+  "format": "gmf-dnd35-conditions",
+  "version": 1,
+  "conditions": [
+    {
+      "id": "blinded",
+      "name": "Blinded"
+    },
+    {
+      "id": "charmed",
+      "name": "Charmed"
+    },
+    {
+      "id": "deafened",
+      "name": "Deafened"
+    },
+    {
+      "id": "fatigued",
+      "name": "Fatigued"
+    },
+    {
+      "id": "frightened",
+      "name": "Frightened"
+    },
+    {
+      "id": "grappled",
+      "name": "Grappled"
+    },
+    {
+      "id": "helpless",
+      "name": "Helpless"
+    },
+    {
+      "id": "invisible",
+      "name": "Invisible"
+    },
+    {
+      "id": "paralyzed",
+      "name": "Paralyzed"
+    },
+    {
+      "id": "prone",
+      "name": "Prone"
+    },
+    {
+      "id": "stunned",
+      "name": "Stunned"
+    }
+  ]
+}

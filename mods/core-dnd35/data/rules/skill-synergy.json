@@ -1,0 +1,20 @@
+{
+  "format": "gmf-dnd35-skill-synergy",
+  "version": 1,
+  "rules": [
+    {
+      "source_skill": "bluff",
+      "source_ranks": 5,
+      "target_skill": "diplomacy",
+      "bonus": 2,
+      "bonus_type": "synergy"
+    },
+    {
+      "source_skill": "knowledge_arcana",
+      "source_ranks": 5,
+      "target_skill": "spellcraft",
+      "bonus": 2,
+      "bonus_type": "synergy"
+    }
+  ]
+}

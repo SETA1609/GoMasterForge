@@ -1,0 +1,16 @@
+services:
+  gomasterforge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gomasterforge:dev
+    container_name: gomasterforge
+    ports:
+      - "2323:2323"
+    volumes:
+      - ./data:/app/data
+    environment:
+      TZ: UTC
+    user: "${UID:-1000}:${GID:-1000}"
+    stdin_open: true
+    tty: true
